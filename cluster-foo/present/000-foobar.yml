@@ -1,0 +1,12 @@
+apiVersion: project.openshift.io/v1
+kind: Project
+metadata:
+  annotations:
+    openshift.io/description: "FooBar"
+    openshift.io/display-name: "FooBar"
+  name: foobar
+spec:
+  finalizers:
+  - kubernetes
+status:
+  phase: Active
