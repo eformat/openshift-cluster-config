@@ -1,0 +1,19 @@
+apiVersion: autoscaling.openshift.io/v1beta1
+kind: MachineAutoscaler
+metadata:
+  finalizers:
+  - machinetarget.autoscaling.openshift.io
+  name: autoscale-foo-g2vj8-worker-ap-southeast-1c
+  namespace: openshift-machine-api
+spec:
+  maxReplicas: 5
+  minReplicas: 1
+  scaleTargetRef:
+    apiVersion: machine.openshift.io/v1beta1
+    kind: MachineSet
+    name: foo-g2vj8-worker-ap-southeast-1c
+status:
+  lastTargetRef:
+    apiVersion: machine.openshift.io/v1beta1
+    kind: MachineSet
+    name: foo-g2vj8-worker-ap-southeast-1c
