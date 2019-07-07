@@ -1,4 +1,9 @@
 # openshift-cluster-config
 
-the worlds simplest gitops operator config.
+openshift cluster config to feed a simple gitops operator
+
+See:
+
+- https://github.com/eformat/gitops-ansible-operator
+
 ....
